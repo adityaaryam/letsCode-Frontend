@@ -14,8 +14,8 @@ const [user, setLoginUser]=useState({})
             <Router>
                 <Routes>
                     <Route exact path="/" element={user&&user._id?<Home user={user}/>:<Login setLoginUser={setLoginUser}/>}/>
-                    <Route path="/login" element={<Login setLoginUser={setLoginUser}/>}/>
-                    <Route path="/register" element={<Register/>}/>
+                    {!(user&&user._id)}&&<Route path="/login" element={<Login setLoginUser={setLoginUser}/>}/>
+                    {!(user&&user._id)}<Route path="/register" element={<Register/>}/>
                     {user&&user._id}&&<Route path="/mySubmissions" element={<AllSubmissions/>}/>
                     <Route path="/404" element={<Page404/>}/>
                     <Route path="*" element={<Navigate to="/404"/>}/>
