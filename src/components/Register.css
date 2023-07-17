@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+}
+.registerBG{
+    
+    background-image: url("../Assets/LoginBg.jpg");
+    background-position: center center;
+    background-attachment:fixed;
+    background-size:cover;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+.box{
+    background-color: rgba(128, 131, 132, 0.827);
+    height: fit-content;
+    width: 20.75rem;
+    border-radius: 4%;
+    padding-bottom: 2.5rem;
+    margin: auto;
+    text-align: center;
+    
+    
+}
+.foot{
+    font-size: 15px;
+    color: #242a31;
+}
+
+.logintocont{
+    font-size: 14px;
+    margin-top: -24px;
+    margin-bottom: 26px;
+    color:#121720;
+    font-weight: 600;
+}
+.input{
+    height: 1.5rem;
+    background-color: #dfe5ed;
+}
+.input:focus{
+    outline: none;
+    border-color: #121720;
+    border-width: 1.5px;
+}
+::placeholder{
+    color: #959aa5;
+    font-weight: lighter;
+}
+.hide{
+    display: none;
+}
+.tippystyle{
+    font-family: 'Montserrat';
+}
+@media only screen and (max-width:350px) {
+    .box{
+        width: 18rem;
+    }
+}
+.box h1{
+    text-align: center;
+    padding: 1.7rem 01rem 1rem 1rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #322424;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+form{
+    text-align: center;    
+}
+
+.btn {
+	background-color:#3e3030;
+	border-radius:10px;
+    border: 1px solid #3e3030; 
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+    margin: 20px 20px 10px;
+	padding:8px 37px;
+	text-decoration:none;
+}
+.btn:hover{
+    background-color: rgb(84, 63, 63);
+}
+
+.forgot{
+    font-size: 12px;
+    position: relative;;
+    bottom: 18px;
+    color: #322424;
+    cursor: pointer;
+}
+.forgot:hover{
+    color: #4c3838;
+}
+a{
+    text-decoration: none;
+    color: #322424;
+    font-weight: 600;
+}
+a:hover{
+    color: #322424;
+}
+.form-control{
+    
+    width: 60%;
+    border-radius: 5px;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    margin: 12px;
+}   
