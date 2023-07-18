@@ -24,7 +24,7 @@ const CodeEditorWindow = ({ onChange, language, code , defualtCode}) => {
   return (
     <div className="overlay rounded-md overflow-hidden w-full h-full shadow-4xl" key={keyval}>
       <Editor
-        height="75vh"
+        height="480px"
         width={`100%`}
         language={language}
         value={value}
